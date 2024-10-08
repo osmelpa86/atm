@@ -1,0 +1,65 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.main-mobile-menu-button {
+  display: none;
+}
+
+@media (max-width: 48rem) {
+  .main-title {
+    font-size: 1rem;
+  }
+
+  .main-logo {
+    height: 1.9rem;
+    border-radius: 50% !important;
+  }
+
+  .user-login-menu {
+    width: 1.9rem;
+    height: 1.9rem;
+    cursor: pointer;
+  }
+
+  .main-menu-toolbar {
+    display: none !important;
+  }
+
+  .main-mobile-menu-button {
+    display: block;
+  }
+
+  .main-logo {
+    display: none;
+  }
+}
+
+.balance-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+
+.balance-title{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.balance-value{
+  font-size: 18px;
+}

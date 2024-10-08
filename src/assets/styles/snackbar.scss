@@ -1,0 +1,146 @@
+@use "@angular/material" as mat;
+@import "palette.scss";
+
+.notification-component-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: left !important;
+  vertical-align: center !important;
+  align-self: center !important;
+
+  .confirm-delete-message-title {
+    font-size: 1.13rem;
+    text-shadow: 0.04rem 0 0 #282a3c;
+    margin: 0.06rem 2.5rem 0.25rem 4.25rem;
+  }
+
+  .confirm-delete-message-content {
+    color: mat.m2-get-contrast-color-from-palette($atm-accent,
+        800) !important;
+    margin-left: 3rem;
+    margin-right: 0.94rem;
+    text-align: justify;
+  }
+
+  .notification-component-content {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: center !important;
+    padding: 0.75rem;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .icon-container-elevation {
+    box-shadow: 0 0.01rem 0.01rem rgba(0, 0, 0, 0.12),
+      0 0.02rem 0.03rem rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .notification-component-content .mat-icon {
+    color: mat.m2-get-contrast-color-from-palette($atm-accent,
+        800) !important;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+  }
+
+  .notification-component-message-content {
+    margin-top: 0.62rem;
+    margin-bottom: 0.62rem;
+    margin-right: 1.56rem;
+  }
+
+  .notification-component-close-btn {
+    float: right !important;
+    position: absolute;
+    right: 0.31rem;
+    top: 0.31rem;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: center !important;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  notification-component-close-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .notification-component-close-btn:hover .mat-icon {
+    color: mat.m2-get-contrast-color-from-palette($atm-accent,
+        800) !important;
+  }
+
+  .notification-component-close-btn .mat-icon {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.13rem;
+    width: 1.13rem;
+    height: 1.13rem;
+    line-height: 1rem !important;
+  }
+}
+
+.mat-mdc-snack-bar-container {
+  padding: 0 !important;
+  max-width: 34.38rem !important;
+}
+
+:root {
+  --success-color: #0c49aa;
+  --error-color: #a92206;
+  --warn-color: #ff5547;
+}
+
+.success-snackbar {
+  color: mat.m2-get-contrast-color-from-palette($atm-accent,
+      800) !important;
+  --mdc-snackbar-container-color: var(--success-color) !important;
+  --mat-mdc-snack-bar-button-color: #fff !important;
+  --mdc-snackbar-supporting-text-color: #fff !important;
+
+  .mat-simple-snackbar-action {
+    color: mat.m2-get-contrast-color-from-palette($atm-accent,
+        800) !important;
+  }
+}
+
+.error-snackbar {
+  color: mat.m2-get-contrast-color-from-palette($atm-accent,
+      800) !important;
+  --mdc-snackbar-container-color: var(--error-color) !important;
+  --mat-mdc-snack-bar-button-color: #fff !important;
+  --mdc-snackbar-supporting-text-color: #fff !important;
+
+  .mat-simple-snackbar-action {
+    color: mat.m2-get-contrast-color-from-palette($atm-accent,
+        800) !important;
+  }
+}
+
+.warning-snackbar {
+  color: mat.m2-get-contrast-color-from-palette($atm-accent,
+      800) !important;
+  --mdc-snackbar-container-color: var(--warn-color) !important;
+  --mat-mdc-snack-bar-button-color: #fff !important;
+  --mdc-snackbar-supporting-text-color: #fff !important;
+
+  .mat-simple-snackbar-action {
+    color: mat.m2-get-contrast-color-from-palette($atm-accent,
+        800) !important;
+  }
+}

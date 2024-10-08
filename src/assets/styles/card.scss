@@ -1,0 +1,31 @@
+@use "@angular/material" as mat;
+@import "palette.scss";
+
+.responsive-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+
+}
+
+.mat-mdc-card-title {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+.mat-mdc-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-container {
+  padding: 26px 8px !important;
+  width: 100%;
+}

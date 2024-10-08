@@ -1,0 +1,33 @@
+@use "@angular/material" as mat;
+@import "palette.scss";
+
+.fill-width {
+  .error-suffix {
+    color: var(--mdc-theme-error,
+        mat.m2-get-color-from-palette($atm-warn, 500)) !important;
+  }
+
+  .mat-mdc-form-field-icon-suffix .error-suffix {
+    padding: 0.36rem !important;
+    box-sizing: content-box;
+  }
+}
+
+.error-container-div {
+  margin-top: -1.25rem;
+  margin-bottom: 0.31rem;
+
+  .error-text {
+    font-size: 0.81rem;
+    margin-left: 0.5rem;
+  }
+
+  .mat-mdc-form-field-error {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: left !important;
+    vertical-align: center !important;
+    align-self: center !important;
+  }
+}
